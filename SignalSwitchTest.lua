@@ -131,3 +131,23 @@ local det1 = dets.DET001
 local det2 = dets.DET002
 local det3 = dets.DET003
 -- Scenario: 0X00 has entered SWDET001, Set the Switch to join lines and Shunt
+sdet.Touched:Connect(function(hit)
+    --Set Switch to MEET
+    game.Workspace.Switches.SWBN001.Line01.Enabled = true
+    print("SWBN001 Set to LINE01")
+    -- Set shunt to GO
+    stop.Color = Color3.fromRGB(255, 255, 255)
+    sright.Color = Color3.fromRGB(255, 255, 255)
+    sleft.Color = Color3.fromRGB(0, 0, 0)
+    print("BN001S SET TO PROCEED")
+)
+-- Scenario: 0X00 has entered DET001, Set Shunt to red
+det1.Touched:Connect(function(hit)
+    -- Set shunt to DANGER
+    stop.Color = Color3.fromRGB(0, 0, 0)
+    sright.Color = Color3.fromRGB(255, 0, 0)
+    sleft.Color = Color3.fromRGB(255, 0, 0)
+    print("BN001S SET TO DANGER")
+)
+-- Continue basic signalling after using DETS and BNs
+-- UUNIT?
