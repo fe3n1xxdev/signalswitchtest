@@ -52,7 +52,7 @@ det1.Touched:Connect(function(hit)
     two0.Color = Color3.fromRGB(0, 0, 0)
     three0.Color = Color3.fromRGB(0, 0, 0)
     print("STARTSIG SET TO DANGER")
-)
+end)
 -- Scenario: 0X00 Passed Det002, In block 002
 -- Set LG001 to DANGER, Set STARTSIG to CAUTION
 det2.Touched:Connect(function(hit)
@@ -66,9 +66,9 @@ det2.Touched:Connect(function(hit)
     one0.Color = Color3.fromRGB(0, 0, 0)
     two0.Color = Color3.fromRGB(0, 0, 0)
     three0.Color = Color3.fromRGB(255, 255, 0)
-    four0.Color = Colour3.fromRGB(0, 0, 0)
+    four0.Color = Color3.fromRGB(0, 0, 0)
     print("STARTSIG SET TO CAUTION")
-)
+end)
 -- Scenario: 0X00 Passed Det003, In block 003
 -- SET LG002 TO DANGER, SET LG001 TO CAUTION, SET STARTSIG TO PRELC
 det3.Touched:Connect(function(hit)
@@ -90,7 +90,7 @@ det3.Touched:Connect(function(hit)
     three0.Color = Color3.fromRGB(255, 255, 0)
     four0.Color = Color3.fromRGB(0, 0, 0)
     print("STARTSIG SET TO PRELC")
-)
+end)
 -- Simulation 2 (Area: BN, Shunt: BNXXXS, Switch: SWBNXXX):
 --->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->->
 --                      SWBN001 
@@ -140,7 +140,7 @@ sdet.Touched:Connect(function(hit)
     sright.Color = Color3.fromRGB(255, 255, 255)
     sleft.Color = Color3.fromRGB(0, 0, 0)
     print("BN001S SET TO PROCEED")
-)
+end)
 -- Scenario: 0X00 has entered DET001, Set Shunt to red
 det1.Touched:Connect(function(hit)
     -- Set shunt to DANGER
@@ -148,6 +148,6 @@ det1.Touched:Connect(function(hit)
     sright.Color = Color3.fromRGB(255, 0, 0)
     sleft.Color = Color3.fromRGB(255, 0, 0)
     print("BN001S SET TO DANGER")
-)
+end)
 -- Continue basic signalling after using DETS and BNs
 -- UUNIT?
