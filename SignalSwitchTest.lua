@@ -75,8 +75,8 @@ det3.Touched:Connect(function(hit)
     -- LG002
     one2.Color = Color3.fromRGB(0, 0, 0)
     two2.Color = Color3.fromRGB(0, 0, 0)
-    three3.Color = Color3.fromRGB(0, 0, 0)
-    four3.Color = Color3.fromRGB(255, 0, 0)
+    three2.Color = Color3.fromRGB(0, 0, 0)
+    four2.Color = Color3.fromRGB(255, 0, 0)
     print("LG002 SET TO DANGER")
     -- LG001
     one1.Color = Color3.fromRGB(0, 0, 0)
